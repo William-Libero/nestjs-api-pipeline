@@ -29,6 +29,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+
+    - name: Installs dependencies
+      run: npm install
+      
     - name: build
       run: npm run build
 
