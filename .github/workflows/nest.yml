@@ -41,3 +41,9 @@ jobs:
       with:
         name: programa
         path: main
+
+        
+  docker:
+    needs: build
+    uses: ./.github/workflows/Docker.yml
+    secrets: inherit
